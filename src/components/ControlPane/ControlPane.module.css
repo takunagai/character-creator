@@ -12,6 +12,12 @@
   margin-bottom: 32px;
 }
 
+@media only screen and (max-width:743px) {
+  .controlPane {
+    max-width: 90vw;
+  }
+}
+
 .title {
   margin: 0;
   /* Optical centering */
