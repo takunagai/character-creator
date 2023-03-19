@@ -1,3 +1,6 @@
+.maxWidthWrapper {
+  position: relative; /* add */
+}
 .characterEditor {
   padding-top: 60px;
   padding-bottom: 64px;
@@ -20,6 +23,15 @@
   margin: 0;
 }
 
+/* add */
+.perspectiveEffect {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  background-color: hsl(195deg, 20%, 86%);
+}
+
+
 @media only screen and (max-width:743px) {
   .characterEditor {
     position: relative;
@@ -35,6 +47,12 @@
     padding-left: 15px;
     padding-right: 15px;
     overflow-x: auto;
+  }
+  /* add */
+  .perspectiveEffect {
+    z-index: -9999;
+    top: 70%;
+    height: 30%;
   }
 }
 
@@ -64,5 +82,10 @@
     /*width: 35%;*/
     min-height: 500px;
     margin-left: 32px; /* add */
+  }
+  /* add */
+  .perspectiveEffect {
+    top: 60%;
+    height: 40%;
   }
 }
